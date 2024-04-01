@@ -1,18 +1,20 @@
 import './App.css';
-import Navigation from './MyNav.jsx';
+import MyNav from './MyNav.jsx';
 import Footer from './MyFooter.jsx';
-import AdditionalContentExample from './Welcome.jsx';
-import DisplayRecord from './AllTheBooks.jsx';
+import Welcome from './Welcome.jsx';
+import AllTheBooks from './AllTheBooks.jsx';
+import "bootstrap/dist/css/bootstrap.min.css";
+import { useState } from 'react';
+import Data from './books/horror.json';
 
 
 function App() {
-
-
+  const[searchedBook, setSearchedBook] = useState("");
   return (
     <div className="App">
-      <Navigation/>
-      <DisplayRecord/>
-      <AdditionalContentExample/>
+      <MyNav searchedBook={searchedBook} setSearchedBook={setSearchedBook}/>
+      <AllTheBooks searchedBook={searchedBook}/>
+      <Welcome/>
       <Footer/>
     </div>
   );

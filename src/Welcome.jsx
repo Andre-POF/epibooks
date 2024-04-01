@@ -1,6 +1,6 @@
 import Alert from 'react-bootstrap/Alert';
 
-function AdditionalContentExample() {
+function Welcome() {
   return (
     <div className="container mt-3">
     <Alert variant="secondary" >
@@ -20,4 +20,4 @@ function AdditionalContentExample() {
   );
 }
 
-export default AdditionalContentExample;
+export default Welcome;
