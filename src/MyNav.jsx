@@ -10,7 +10,7 @@ export default function MyNav(props) {
         
         <Navbar className='d-flex align-items-center' expand="lg" bg="secondary-subtle" >
             <Container>
-                <Navbar.Brand href="#home" className='text-danger'>React-Bootstrap</Navbar.Brand>
+                <Navbar.Brand href="#home" className='text-danger'>Epibooks</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav.Item className='mx-2 d-flex align-items-center'> 

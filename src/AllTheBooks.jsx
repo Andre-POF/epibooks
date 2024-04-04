@@ -5,11 +5,17 @@ import Col from 'react-bootstrap/Col';
 import SingleBook from './SingleBook';
 import CommentArea from './CommentArea';
 import { useState } from 'react';
+import MyNav from './MyNav';
+import Welcome from './Welcome';
+import Footer from './MyFooter';
 
 export default function AllTheBooks (props) {
-    const {searchedBook} = props;
+    const {searchedBook,setSearchedBook} = props;
     const [chosenBook,setChosenBook] = useState("");
     return (
+    <>        
+    <MyNav searchedBook={searchedBook} setSearchedBook={setSearchedBook}/>
+    <Welcome/>
     <div className='row cols-3'>
         <Container>
             <Row xs={2}>
@@ -39,7 +45,9 @@ export default function AllTheBooks (props) {
                     <CommentArea show={chosenBook}/>
                 </Row>
             </Row>
-            </Container>
-        </div>
+        </Container>
+    </div>
+    <Footer/>
+    </>
     );
 }

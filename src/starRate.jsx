@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faStar } from "@fortawesome/free-solid-svg-icons"
 
 export default function StarRate (props) {
-    const {currentRate, setCurrentRate} = props;
+    const {setCurrentRate} = props;
     const [rating,setRating] = useState(null);
 
     return(
@@ -18,6 +18,7 @@ export default function StarRate (props) {
                     value={rate}
                     onClick={()=> {
                         setRating(rate)
+                        console.log(rate);
                         setCurrentRate(rate)}}/>
                     <FontAwesomeIcon icon={faStar}
                     color={rate <= (rating) ? "goldenrod" : "grey" }/>

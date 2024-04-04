@@ -4,16 +4,18 @@ function Welcome() {
   return (
     <div className="container mt-3">
     <Alert variant="secondary" >
-      <Alert.Heading><h1>EpiBooks! All You Can Get!</h1> </Alert.Heading>
+      <Alert.Heading><h1>EpiBooks! Horror stories for all tastes! </h1> </Alert.Heading>
       <p className='p-2'>
-        Aww yeah, you successfully read this important alert message. This
-        example text is going to run a bit longer so that you can see how
-        spacing within an alert works with this kind of content.
+        Horror books have an unparalleled ability to captivate readers with
+        their spine-chilling narratives, invoking a sense of fear, suspense,
+        and intrigue. From classic tales of supernatural entities and haunted 
+        houses to modern psychological thrillers, the genre encompasses a wide
+        range of themes and motifs that delve into the darkest corners of human
+        imagination.
       </p>
       <hr />
       <p className="mb-0">
-        Whenever you need to, be sure to use margin utilities to keep things
-        nice and tidy.
+        Whenever you need to, be sure to use your immagination.
       </p>
     </Alert>
     </div>
